@@ -17,32 +17,47 @@ export default function About() {
       transition={{ delay: 0.175 }}
       id="about"
     >
-      <SectionHeading>About me</SectionHeading>
+      <SectionHeading>About Me</SectionHeading>
+
       <p className="mb-3">
-        After graduating with a degree in{" "}
-        <span className="font-medium">Accounting</span>, I decided to pursue my
-        passion for programming. I enrolled in a coding bootcamp and learned{" "}
-        <span className="font-medium">full-stack web development</span>.{" "}
-        <span className="italic">My favorite part of programming</span> is the
-        problem-solving aspect. I <span className="underline">love</span> the
-        feeling of finally figuring out a solution to a problem. My core stack
-        is{" "}
+        I am <span className="font-medium">Sujoy P T</span>, an{" "}
+        <span className="font-medium">M.Sc Data Science graduate</span> from the
+        University of Kerala and a{" "}
+        <span className="font-medium">UGC NET Qualified</span> candidate in
+        Computer Science & Applications.
+      </p>
+
+      <p className="mb-3">
+        My interests include{" "}
         <span className="font-medium">
-          React, Next.js, Node.js, and MongoDB
+          Artificial Intelligence, Machine Learning, Deep Learning, Natural
+          Language Processing, Computer Vision, and Generative AI
         </span>
-        . I am also familiar with TypeScript and Prisma. I am always looking to
-        learn new technologies. I am currently looking for a{" "}
-        <span className="font-medium">full-time position</span> as a software
-        developer.
+        . During my postgraduate studies, I worked on several AI and Data
+        Science projects including Underwater Waste Detection using YOLOv11,
+        Hate Speech Detection using BERT, AI Tutor Chatbot with RAG, Customer
+        Segmentation using Machine Learning, and Sales Forecasting using Time
+        Series Analysis.
+      </p>
+
+      <p className="mb-3">
+        I have hands-on experience with{" "}
+        <span className="font-medium">
+          Python, SQL, TensorFlow, PyTorch, Scikit-Learn, Transformers,
+          LangChain, Power BI, Git, GitHub, Machine Learning, Deep Learning,
+          NLP, Computer Vision, and Large Language Models (LLMs)
+        </span>
+        . I enjoy solving real-world problems through data-driven approaches and
+        continuously exploring emerging technologies in AI and Data Science.
       </p>
 
       <p>
-        <span className="italic">When I'm not coding</span>, I enjoy playing
-        video games, watching movies, and playing with my dog. I also enjoy{" "}
-        <span className="font-medium">learning new things</span>. I am currently
-        learning about{" "}
-        <span className="font-medium">history and philosophy</span>. I'm also
-        learning how to play the guitar.
+        I am currently seeking opportunities in{" "}
+        <span className="font-medium">
+          AI/ML, Data Science, Research, and Teaching
+        </span>
+        , where I can apply my technical skills, contribute to innovative
+        projects, and continue growing professionally.
       </p>
     </motion.section>
   );

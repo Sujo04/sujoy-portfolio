@@ -29,14 +29,17 @@ export default function Contact() {
         once: true,
       }}
     >
-      <SectionHeading>Contact me</SectionHeading>
+      <SectionHeading>Contact Me</SectionHeading>
 
       <p className="text-gray-700 -mt-6 dark:text-white/80">
-        Please contact me directly at{" "}
-        <a className="underline" href="mailto:example@gmail.com">
-          example@gmail.com
+        Feel free to contact me directly at{" "}
+        <a
+          className="underline"
+          href="mailto:sujoypt10@gmail.com"
+        >
+          sujoypt10@gmail.com
         </a>{" "}
-        or through this form.
+        or through the form below.
       </p>
 
       <form
@@ -58,15 +61,17 @@ export default function Contact() {
           type="email"
           required
           maxLength={500}
-          placeholder="Your email"
+          placeholder="Your Email"
         />
+
         <textarea
           className="h-52 my-3 rounded-lg borderBlack p-4 dark:bg-white dark:bg-opacity-80 dark:focus:bg-opacity-100 transition-all dark:outline-none"
           name="message"
-          placeholder="Your message"
+          placeholder="Your Message"
           required
           maxLength={5000}
         />
+
         <SubmitBtn />
       </form>
     </motion.section>
