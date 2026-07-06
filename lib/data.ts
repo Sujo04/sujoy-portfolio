@@ -1,37 +1,20 @@
 import React from "react";
 import { CgWorkAlt } from "react-icons/cg";
-import { FaReact } from "react-icons/fa";
 import { LuGraduationCap } from "react-icons/lu";
-import underwaterWasteImg from "@/public/underwater-waste.jpg";
-import aiTutorImg from "@/public/ai-tutor-chatbot.png";
+
+import underwaterWasteImg from "@/public/underwater-waste.png";
+import aiRagChatbotImg from "@/public/ai-tutor-chatbot.png";
 import hateSpeechImg from "@/public/hate-speech-bert.png";
 import salesForecastImg from "@/public/sales-forecasting.png";
 import customerSegmentationImg from "@/public/customer-segmentation.png";
+
 export const links = [
-  {
-    name: "Home",
-    hash: "#home",
-  },
-  {
-    name: "About",
-    hash: "#about",
-  },
-  {
-    name: "Projects",
-    hash: "#projects",
-  },
-  {
-    name: "Skills",
-    hash: "#skills",
-  },
-  {
-    name: "Experience",
-    hash: "#experience",
-  },
-  {
-    name: "Contact",
-    hash: "#contact",
-  },
+  { name: "Home", hash: "#home" },
+  { name: "About", hash: "#about" },
+  { name: "Projects", hash: "#projects" },
+  { name: "Skills", hash: "#skills" },
+  { name: "Experience", hash: "#experience" },
+  { name: "Contact", hash: "#contact" },
 ] as const;
 
 export const experiencesData = [
@@ -63,39 +46,88 @@ export const experiencesData = [
 
 export const projectsData = [
   {
-    title: "AI Tutor Chatbot",
-    description:
-      "Developed an AI Tutor Chatbot with voice and text interaction using FastAPI and React. Implemented STT, TTS and RAG-based retrieval for context-aware responses.",
-    tags: ["Python", "FastAPI", "React", "LangChain", "RAG", "LLM"],
-    imageUrl:aiTutorImg,
-  },
-  {
     title: "Underwater Waste Detection using YOLOv11",
     description:
-      "Built a deep learning-based marine debris detection system using YOLOv11 for underwater object detection and classification.",
-    tags: ["Python", "YOLOv11", "OpenCV", "Computer Vision"],
+      "Developed a deep learning-based marine debris detection system using YOLOv11 for underwater object detection and classification. Performed image preprocessing, augmentation, model training, and evaluation using Precision, Recall, F1-Score, and mAP metrics.",
+    tags: [
+      "Python",
+      "YOLOv11",
+      "OpenCV",
+      "Roboflow",
+      "Computer Vision",
+    ],
     imageUrl: underwaterWasteImg,
+    githubUrl:
+      "https://github.com/Sujo04/Under-Water-Waste-Detection-Using-YOLO-V8-",
+    demoUrl: "",
   },
+
+  {
+    title: "AI RAG Chatbot",
+    description:
+      "Built a Retrieval-Augmented Generation (RAG) chatbot that enables users to upload PDF documents and ask natural language questions. Implemented semantic search using ChromaDB, local embeddings with Ollama, and a Streamlit interface. Dockerized the application for fully offline document question answering.",
+    tags: [
+      "Python",
+      "Streamlit",
+      "LangChain",
+      "Ollama",
+      "ChromaDB",
+      "Docker",
+      "RAG",
+    ],
+    imageUrl: aiRagChatbotImg,
+    githubUrl: "https://github.com/Sujo04/AI-RAG-Chatbot",
+    demoUrl: "",
+  },
+
   {
     title: "Hate Speech Detection using BERT",
     description:
-      "Fine-tuned a BERT model for hate speech and toxic content classification using Hugging Face Transformers and PyTorch.",
-    tags: ["Python", "BERT", "PyTorch", "Transformers", "NLP"],
+      "Fine-tuned a BERT model for hate speech and toxic content classification. Implemented text preprocessing, tokenization, and contextual embeddings using Hugging Face Transformers and PyTorch.",
+    tags: [
+      "Python",
+      "BERT",
+      "PyTorch",
+      "Transformers",
+      "NLP",
+    ],
     imageUrl: hateSpeechImg,
+    githubUrl: "",
+    demoUrl: "",
   },
+
   {
     title: "Customer Segmentation using Machine Learning",
     description:
-      "Applied K-Means clustering to segment customers based on spending behavior and annual income for marketing insights.",
-    tags: ["Python", "Scikit-Learn", "Pandas", "Machine Learning"],
+      "Applied K-Means clustering to segment customers based on purchasing behavior and annual income. Performed exploratory data analysis and optimized clusters using the Elbow Method.",
+    tags: [
+      "Python",
+      "Scikit-Learn",
+      "Pandas",
+      "Machine Learning",
+      "K-Means",
+    ],
     imageUrl: customerSegmentationImg,
+    githubUrl:
+      "https://github.com/Sujo04/Customer-segmentation---ML",
+    demoUrl: "",
   },
+
   {
     title: "Sales Forecasting using Time Series Analysis",
     description:
-      "Built a sales forecasting model using Facebook Prophet to predict future sales trends and analyze seasonality.",
-    tags: ["Python", "Prophet", "Pandas", "Time Series"],
+      "Developed a sales forecasting model using Facebook Prophet to predict future retail sales trends. Performed preprocessing, trend analysis, seasonality modeling, and evaluated forecasting performance using RMSE and MAE.",
+    tags: [
+      "Python",
+      "Prophet",
+      "Pandas",
+      "Time Series",
+      "Forecasting",
+    ],
     imageUrl: salesForecastImg,
+    githubUrl:
+      "https://github.com/Sujo04/SALES-FORECASTING-USING-TIME-SERIES",
+    demoUrl: "",
   },
 ] as const;
 
@@ -114,6 +146,10 @@ export const skillsData = [
   "NLP",
   "RAG",
   "LLMs",
+  "Ollama",
+  "ChromaDB",
+  "Docker",
+  "Streamlit",
   "Power BI",
   "Git",
   "GitHub",
